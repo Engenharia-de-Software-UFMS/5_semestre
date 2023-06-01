@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.basicactivitygridview.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_ChapeuSeletorFragment"
+            app:destination="@id/ChapeuSeletorFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_CasasDeHogwartsFragment"
+            app:destination="@id/CasasDeHogwartsFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_PersonagensFragment"
+            app:destination="@id/PersonagensFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ChapeuSeletorFragment"
+        android:name="com.example.basicactivitygridview.ChapeuSeletorFragment"
+        android:label="@string/chapeu_seletor"
+        tools:layout="@layout/fragment_chapeu_seletor">
+
+        <action
+            android:id="@+id/action_ChapeuSeletorFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CasasDeHogwartsFragment"
+        android:name="com.example.basicactivitygridview.CasasDeHogwartsFragment"
+        android:label="@string/casas_de_hogwarts"
+        tools:layout="@layout/fragment_casas_de_hogwarts">
+
+        <action
+            android:id="@+id/action_CasasDeHogwartsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PersonagensFragment"
+        android:name="com.example.basicactivitygridview.CasasDeHogwartsFragment"
+        android:label="@string/personagens"
+        tools:layout="@layout/fragment_casas_de_hogwarts">
+
+        <action
+            android:id="@+id/action_CasasDeHogwartsFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
+

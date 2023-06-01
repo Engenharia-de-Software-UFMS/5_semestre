@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BasicActivityGridView</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home">Home</string>
+    <string name="personagens">Personagens</string>
+    <string name="chapeu_seletor">Chapéu Seletor</string>
+    <string name="subtitulo_chapeu_seletor_2">Escolha sua casa de Hogwarts</string>
+    <string name="casas_de_hogwarts">Casas de Hogwarts</string>
+</resources>
